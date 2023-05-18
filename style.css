@@ -1,4 +1,5 @@
 /* ======FONT=========== */
+/* Задание шрифтов */
 @font-face {
     font-family: "PT-Serif";
     src: url(fonts/PT-Serif/PTSerif-Regular.ttf) format('truetype');
@@ -153,7 +154,7 @@
 .contacts {
     display: flex;
     flex-direction: column;
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -182,4 +183,22 @@
 .contacts_item_italic {
     font-style: italic;
     font-weight: 800;
+}
+
+/* Стилизация под телефон */
+@media (max-width: 640px){
+    
+    .main {
+        padding-left: 30px;
+    }
+
+    .my_way_photo {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        padding-left: 30px;
+    }
 }
