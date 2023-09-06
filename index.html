@@ -4,67 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Мое резюме на должность разработчика на JavaScript.">
+    <meta name="description" content="Мое резюме на должность разработчика на JavaScript">
     <title>My-CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header-section">
-        <h1 class="head_title">Мое резюме на должность разработчика на JavaScript</h1>
+    <header class="header header--color">
+        <div class="container">
+            <h1 class="header__title">
+                Резюме на должность разработчика на JavaScript
+            </h1>
+        </div> 
     </header>
     <main class="main">
-        <section class="my_way">
-            <h2 class="my_way_header">Обо мне</h2>
-            <div class="my_way_photo">  
-            </div>
-            <p class="my_way_text">
-                Меня зовут Андрей, и я программист со страстью к творчеству и постоянному развитию. Мир веб-разработки – это мое призвание, а программирование – мой язык самовыражения. Здесь я хочу поделится своей увлекательной историей развития и привлечь ваше внимание к моим навыкам и достижениям.
-            </p>
-            <p class="my_way_text">
-                С самого начала я был обращен в мир HTML и CSS. Владение основами семантики сайтов и стилизации на высоком уровне стало фундаментом моего профессионального роста. Я учился создавать веб-страницы, которые не только привлекательны визуально, но и эффективно передают информацию.
-            </p>
-            <p class="my_way_text">
-                Мое обучение продолжилось с изучением JavaScript, языка, который дал мне воз-можность создавать интерактивные и динамические веб-приложения. Я углубился в изучении деревьев DOM и Bom, разбираясь в асинхронных запросах и создании серверной логики на платформе Node.js. Я стараюсь применять современные возможности языка, используя модули и библиотеки, такие как WebPack, Babel, Eslint, Jest, Husky. Я так же умею писать unit-тесты для обеспечения качества моего кода.
-            </p>
-            <p class="my_way_text">
-                GitHub стал моим незаменимым партнером в разработке. Я не только умею создавать новые коммиты, но и разбираюсь в слиянии веток и разрешении конфликтов между ними. Мое понимание работы с GitHub позволяет мне эффективно сотрудничать с другими разработчиками и делиться своим кодом. Я так же могу генерировать GitHub-token для создания собственных библиотек и предоставления доступа сторонним сайтам, открывая новые возможности для развития проектов.
-            </p>
-            <p class="my_way_text">
-                Моя история развития в программировании отображает мое стремление к совершенству и к обучению новым технологиям. Я не просто программирую. Я создаю инновационные и эффективные решения, учитывая требования и потребности пользователей.
-            </p>
-            <p class="my_way_text">
-                Я нацелен на постоянное профессиональное развитие и всегда готов принять новые вызовы. Я стремлюсь к совершенству в каждом проекте, которым занимаюсь, и полностью предан созданию качественного и чистого кода.
-            </p>
-            <p class="my_way_text">
-                Я открыт для сотрудничества и готов применять свои навыки и опыт в вашей компании. Мое внимание к деталям, умение работать в команде и стремление к саморазвитию делают меня ценным и надежным членом команды.
-            </p>
-        </section>
-        <section class="my_skills">
-            <h2 class="my_skills_header">Мои навыки и изученные технологии</h2>
-            <p class="my_skills_text">
-                На сегодняшний день я освоил следующие технологии и приобрел навыки:
-                <ul class="my_skills_items">
-                    <li class="my_skills_item my_person_italic">HTML</li>
-                    <li class="my_skills_item my_person_italic">CSS</li>
-                    <li class="my_skills_item my_person_italic">JavaScript</li>
-                    <li class="my_skills_item my_person_italic">Node.js</li>
-                    <li class="my_skills_item my_person_italic">Git и GitHub</span></li>
-                    <li class="my_skills_item my_person_italic">VBA для Excel</span></li>
-                </ul>
-            </p>
-        </section>
-        <section class="my_works">
-            <h2 class="my_works_header">Мои работы</h2>
-            <div class="noemi">
-                <p class="noemi_text">Это один из моих проектов веб-страницы выложенный на GitHub, там применена адаптивная верстка под различные типы устройств: <a href="https://andrewvenko.github.io/Diplom-work-noemi/" class="noemi_link" target="_blank">ссылка на проект</a>.</p>
-                <p class="noemi_text">Это проект небольшого приложения по ведению личных финансов реализованный на основе платформы Node.js: <a href="https://github.com/AndrewVenko/bhj-diploma" class="noemi_link" target="_blank">ссылка на проект</a>.</p>
+        <div class="container">
+            <section class="my-way">
+                <h2 class="my-way__header my-way__header--margin-bottom">
+                    Обо мне
+                </h2>
+                <div class="my-way__photo my-way__photo--margin-right">  
                 </div>
-            </div>
-        </section>
+                <p class="my-way__text">
+                    Меня зовут Андрей, и я программист со страстью к творчеству и постоянному развитию. Мир веб-разработки – это мое призвание, а программирование – мой язык самовыражения. Здесь я хочу поделится своей увлекательной историей развития и привлечь ваше внимание к моим навыкам и достижениям.
+                </p>
+                <p class="my-way__text my-way__text--margin-top">
+                    С самого начала я был обращен в мир HTML и CSS. Владение основами семантики сайтов и стилизации на высоком уровне стало фундаментом моего профессионального роста. Я осваивал применение переменных, SVG-графики, БЭМ, grid-контейнеров, кроссбраузерности и так же transform. Учился создавать веб-страницы, которые не только привлекательны визуально, но и эффективно передают информацию.
+                </p>
+                <p class="my-way__text my-way__text--margin-top">
+                    Мое обучение продолжилось с изучением JavaScript, языка, который дал мне воз-можность создавать интерактивные и динамические веб-приложения. Я углубился в изучении деревьев DOM и Bom, разбираясь в асинхронных запросах и создании серверной логики на платформе Node.js. Я стараюсь применять современные возможности языка, используя модули и библиотеки, такие как WebPack, Babel, Eslint, Jest, Husky. Я так же умею писать unit-тесты для обеспечения качества моего кода.
+                </p>
+                <p class="my-way__text my-way__text--margin-top">
+                    GitHub стал моим незаменимым партнером в разработке. Я не только умею создавать новые коммиты, но и разбираюсь в слиянии веток и разрешении конфликтов между ними. Мое понимание работы с GitHub позволяет мне эффективно сотрудничать с другими разработчиками и делиться своим кодом. Я так же могу генерировать GitHub-token для создания собственных библиотек и предоставления доступа сторонним сайтам, открывая новые возможности для развития проектов.
+                </p>
+                <p class="my-way__text my-way__text--margin-top">
+                    Моя история развития в программировании отображает мое стремление к совершенству и к обучению новым технологиям. Я не просто программирую. Я создаю инновационные и эффективные решения, учитывая требования и потребности пользователей.
+                </p>
+                <p class="my-way__text my-way__text--margin-top">
+                    Я нацелен на постоянное профессиональное развитие и всегда готов принять новые вызовы. Я стремлюсь к совершенству в каждом проекте, которым занимаюсь, и полностью предан созданию качественного и чистого кода.
+                </p>
+                <p class="my-way__text my-way__text--margin-top">
+                    Я открыт для сотрудничества и готов применять свои навыки и опыт в вашей компании. Мое внимание к деталям, умение работать в команде и стремление к саморазвитию делают меня ценным и надежным членом команды.
+                </p>
+            </section>
+            <section class="my-skills">
+                <h2 class="my-skills__header my-skills__header--margin">
+                    Навыки и изученные технологии
+                </h2>
+                <p class="my-skills__text my-skills__text--margin-bottom">
+                    На сегодняшний день я освоил следующие технологии и приобрел навыки:
+                </p>
+                <ul class="my-skills__items my-skills__items--padding-left">
+                    <li class="my-skills__item">
+                        HTML (адаптивная верстка, кроссбраузерность, БЭМ)
+                    </li>
+                    <li class="my-skills__item my-skills__item--margin-top">
+                        CSS (Flex, Grid, Transform, SVG, переменные)
+                    </li>
+                    <li class="my-skills__item my-skills__item--margin-top">
+                        JavaScript (WebPack, Jest, Babel, Eslint, знание новых возможностей языка)
+                    </li>
+                    <li class="my-skills__item my-skills__item--margin-top">
+                        Node.js
+                    </li>
+                    <li class="my-skills__item my-skills__item--margin-top">
+                        Git и GitHub
+                    </li>
+                    <li class="my-skills__item my-skills__item--margin-top">
+                        VBA для Excel
+                    </li>
+                </ul>    
+            </section>
+            <section class="my-works">
+                <h2 class="my-works__header my-works__header--margin">
+                    Мои работы
+                </h2>
+                <div class="noemi">
+                    <div class="bikecenter noemi--padding">
+                        <iframe class="noemi__iframe" src="https://andrewvenko.github.io/bikecenter/"  scrolling="auto"></iframe>
+                        <div class="noemi__blok-link noemi__blok-link--margin-top">
+                            <a class="noemi__link noemi__link--margin-top"  href="https://andrewvenko.github.io/bikecenter/"  target="_blank">
+                                <button class="noemi__btn noemi__btn--padding noemi__btn--hover">
+                                    GitHub Page
+                                </button>     
+                            </a>
+                            <a class="noemi__link noemi__link--margin-top" href="https://github.com/AndrewVenko/bikecenter"  target="_blank">
+                                <button class="noemi__btn noemi__btn--padding noemi__btn--hover">
+                                    GitHub репозиторий
+                                </button>  
+                            </a>
+                        </div>
+                    </div>
+                    <div class="netology noemi--padding">
+                        <iframe class="noemi__iframe" src="https://andrewvenko.github.io/Diplom-work-noemi/"  scrolling="auto"></iframe>
+                        <div class="noemi__blok-link noemi__blok-link--margin-top">
+                            <a class="noemi__link noemi__link--margin-top"  href="https://andrewvenko.github.io/Diplom-work-noemi/"  target="_blank">
+                                <button class="noemi__btn noemi__btn--padding noemi__btn--hover">
+                                    GitHub Page
+                                </button>     
+                            </a>
+                            <a class="noemi__link noemi__link--margin-top" href="https://github.com/AndrewVenko/Diplom-work-noemi"  target="_blank">
+                                <button class="noemi__btn noemi__btn--padding noemi__btn--hover">
+                                    GitHub репозиторий
+                                </button>  
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <sections class="my-sertificates">
+                <h2 class="sertificates_header">
+                    Сертификаты пройденных курсов
+                </h2>
+                <p class="sertificates_blocks">
+                    <ul class="sertificates_items">
+                        <li class="sertificate_text"><a href="./certificates/Sertificate-HTML.pdf" target="_blank" class="certificat_link">HTML-верстка с нуля до первого макета</a></li>
+                        <li class="sertificate_text"><a href="./certificates/Sertificate-Mobile.pdf" target="_blank" class="certificat_link">Адаптивная и мобильная верстка</a></li>
+                        <li class="sertificate_text"><a href="./certificates/Sertificate-Git.pdf" target="_blank" class="certificat_link">Git</a></li>
+                        <li class="sertificate_text"><a href="./certificates/Sertificate-Base_JavaScript.pdf" target="_blank" class="certificat_link">Основы JavaScript</a></li>
+                        <li class="sertificate_text"><a href="./certificates/Sertificate-Base_JavaScript_Browser.pdf" target="_blank" class="certificat_link">Основы JavaScript в браузере</a></li>
+                        <li class="sertificate_text"><a href="./certificates/Sertificate-Advanced_JavaScript.pdf" target="_blank" class="certificat_link">Продвинутый JS современные возможности</a></li>
+                    </ul>
+                </p>
+            </sections>
+        </div>
     </main>
     <footer class="footer">
         <div class="contacts">
-            <h2 class="contacts_header">Мои контакты для связи</h2>
+            <h2 class="contacts_header">Контакты для связи</h2>
             <p class="contacts_text">
                 Если вас заинтересовало мое резюме, я буду рад обсудить возможности сотрудничества и предоставить дополнительную информацию о моем опыте. С уважением в своих способностях и готовности к новым вызовам, я оставляю это резюме на ваше рассмотрение.
             </p>
