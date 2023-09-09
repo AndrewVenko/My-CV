@@ -66,6 +66,16 @@ body {
     color: #FFFFFF;
 }
 
+.header__link-download {
+    position: absolute;
+    top: 45px;
+    left: 5px;
+}
+
+.header__link-svg {
+    fill: white;
+}
+
 /* =========MAIN============== */
 .main {
     display: flex;
@@ -217,7 +227,10 @@ body {
 }
 
 .noemi__link--margin-top {
-    margin-top: 10px;
+    margin-top: 10px;  
+}
+
+.noemi__link--margin-left {
     margin-left: 10px;
 }
 
@@ -259,21 +272,28 @@ body {
     display: grid;
     gap: 20px 10px;
     grid-template-areas: 'layout adaptive-layout git' 'basics-JS basics-JS-browser advanced-JS';
+    box-sizing: border-box;
 }
 
 .my-sertificates__block {
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
 }
 
-.my-sertificates__embet {
+.my-sertificate__object {
+    width: 100%;
+}
+
+.my-sertificate__embet {
+    width: 100%;
     height: 300px;
     border: none;
     border-radius: 12px;
 }
 
-.my-sertificates__link {
+.my-sertificate__link {
     font-family: var(--var-font-family);
     font-size: 16px;
     font-weight: 400;
@@ -283,7 +303,7 @@ body {
     color: black;
 }
 
-.my-sertificates__link--hover:hover {
+.my-sertificate__link--hover:hover {
     text-decoration: underline;
 }
 
@@ -423,9 +443,22 @@ body {
         grid-template-areas: 'layout adaptive-layout' 'git basics-JS' 'basics-JS-browser advanced-JS';
     }
 
-    .my-sertificates__embet {
-        width: 250px;
-        height: 250px;
+    .my-sertificate__object {
+        display: none;
+        width: 100%;
+    }
+
+    .my-sertificate__link {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+        border: 1px solid black;
+        border-radius: 12px;
+        background-color: black;
+        color: white;
     }
 
     .footer__header {
