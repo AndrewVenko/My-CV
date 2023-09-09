@@ -22,7 +22,7 @@
                 <h2 class="my-way__header my-way__header--margin-bottom">
                     Обо мне
                 </h2>
-                <div class="my-way__photo my-way__photo--margin-right">  
+                <div class="my-way__photo my-way__photo--margin-right my-way__photo--margin-bottom">  
                 </div>
                 <p class="my-way__text">
                     Меня зовут Андрей, и я программист со страстью к творчеству и постоянному развитию. Мир веб-разработки – это мое призвание, а программирование – мой язык самовыражения. Здесь я хочу поделится своей увлекательной историей развития и привлечь ваше внимание к моим навыкам и достижениям.
@@ -58,7 +58,7 @@
                         HTML (адаптивная верстка, кроссбраузерность, БЭМ)
                     </li>
                     <li class="my-skills__item my-skills__item--margin-top">
-                        CSS (Flex, Grid, Transform, SVG, переменные)
+                        CSS (Flex, Grid, Transform, SVG, custom property)
                     </li>
                     <li class="my-skills__item my-skills__item--margin-top">
                         JavaScript (WebPack, Jest, Babel, Eslint, знание новых возможностей языка)
@@ -112,35 +112,87 @@
                 </div>
             </section>
             <sections class="my-sertificates">
-                <h2 class="sertificates_header">
+                <h2 class="my-sertificates__header my-sertificates__header--margin-bottom">
                     Сертификаты пройденных курсов
                 </h2>
-                <p class="sertificates_blocks">
-                    <ul class="sertificates_items">
-                        <li class="sertificate_text"><a href="./certificates/Sertificate-HTML.pdf" target="_blank" class="certificat_link">HTML-верстка с нуля до первого макета</a></li>
-                        <li class="sertificate_text"><a href="./certificates/Sertificate-Mobile.pdf" target="_blank" class="certificat_link">Адаптивная и мобильная верстка</a></li>
-                        <li class="sertificate_text"><a href="./certificates/Sertificate-Git.pdf" target="_blank" class="certificat_link">Git</a></li>
-                        <li class="sertificate_text"><a href="./certificates/Sertificate-Base_JavaScript.pdf" target="_blank" class="certificat_link">Основы JavaScript</a></li>
-                        <li class="sertificate_text"><a href="./certificates/Sertificate-Base_JavaScript_Browser.pdf" target="_blank" class="certificat_link">Основы JavaScript в браузере</a></li>
-                        <li class="sertificate_text"><a href="./certificates/Sertificate-Advanced_JavaScript.pdf" target="_blank" class="certificat_link">Продвинутый JS современные возможности</a></li>
-                    </ul>
-                </p>
+                <div class="my-sertificates__blocks">
+                    <div class="layout my-sertificates__block">
+                        <object>
+                            <embed class="my-sertificates__embet" src="/certificates/Sertificate-HTML.pdf" type="application/pdf">
+                        </object>
+                        <a class="my-sertificates__link my-sertificates__link--hover" href="./certificates/Sertificate-HTML.pdf" target="_blank">
+                            HTML-верстка с нуля до первого макета
+                        </a>
+                    </div>
+                    <div class="adaptive-layout my-sertificates__block">
+                        <object>
+                            <embed class="my-sertificates__embet" src="/certificates/Sertificate-Mobile.pdf" type="application/pdf">
+                        </object>
+                        <a class="my-sertificates__link my-sertificates__link--hover" href="./certificates/Sertificate-Mobile.pdf" target="_blank">
+                            Адаптивная и мобильная верстка
+                        </a>
+                    </div>
+                    <div class="git my-sertificates__block">
+                        <object>
+                            <embed class="my-sertificates__embet" src="/certificates/Sertificate-Git.pdf" type="application/pdf">
+                        </object>
+                        <a class="my-sertificates__link my-sertificates__link--hover" href="./certificates/Sertificate-Git.pdf" target="_blank">
+                            Git
+                        </a>
+                    </div>
+                    <div class="basics-JS my-sertificates__block">
+                        <object>
+                            <embed class="my-sertificates__embet" src="/certificates/Sertificate-Base_JavaScript.pdf" type="application/pdf">
+                        </object>
+                        <a class="my-sertificates__link my-sertificates__link--hover" href="./certificates/Sertificate-Base_JavaScript.pdf" target="_blank">
+                            Основы JavaScript
+                        </a>
+                    </div>
+                    <div class="basics-JS-browser my-sertificates__block">
+                        <object>
+                            <embed class="my-sertificates__embet" src="/certificates/Sertificate-Base_JavaScript_Browser.pdf" type="application/pdf">
+                        </object>
+                        <a class="my-sertificates__link my-sertificates__link--hover" href="./certificates/Sertificate-Base_JavaScript_Browser.pdf" target="_blank">
+                            Основы JavaScript в браузере
+                        </a>
+                    </div>
+                    <div class="advanced-JS my-sertificates__block">
+                        <object>
+                            <embed class="my-sertificates__embet" src="/certificates/Sertificate-Advanced_JavaScript.pdf" type="application/pdf">
+                        </object>
+                        <a class="my-sertificates__link my-sertificates__link--hover" href="./certificates/Sertificate-Advanced_JavaScript.pdf" target="_blank">
+                            Продвинутый JS современные возможности
+                        </a>
+                    </div>
+                </div>
             </sections>
         </div>
     </main>
-    <footer class="footer">
-        <div class="contacts">
-            <h2 class="contacts_header">Контакты для связи</h2>
-            <p class="contacts_text">
-                Если вас заинтересовало мое резюме, я буду рад обсудить возможности сотрудничества и предоставить дополнительную информацию о моем опыте. С уважением в своих способностях и готовности к новым вызовам, я оставляю это резюме на ваше рассмотрение.
+    <footer class="footer footer--color">
+        <div class="container">
+            <h2 class="footer__header footer__header--margin-bottom">
+                Контакты для связи
+            </h2>
+            <p class="footer__text footer__text--margin-bottom">
+                Если вас заинтересовало мое резюме, я буду рад обсудить возможности сотрудничества и предоставить дополнительную информацию о моем опыте. С уважением в своих силах и готовности к новым вызовам, я оставляю это резюме на ваше рассмотрение.
             </p>
-            <p class="contacts_text">
+            <p class="footer__text footer__text--margin-bottom">
                 С уважением, Андрей!
             </p>
-            <p class="contacts_text">
-                <ul class=" contacts_text contacts_items">
-                    <li class="contacts_item">Почта: <span class="contacts_item_italic mail">andrewvenko95@gmail.com</span></li>
-                    <li class="contacts_item">Телефон: <span class="contacts_item_italic">+7912-287-10-81</span></li>
+            <p class="footer__text">
+                <ul class="footer__items">
+                    <li class="footer__item footer__text footer__item--margin-top">
+                        Почта:
+                        <a class="footer__link footer__link--hover" href="mailto:andrewvenko95@gmail.com">
+                            andrewvenko95@gmail.com
+                        </a>
+                    </li>
+                    <li class="footer__item footer__text">
+                        Телефон:
+                        <a class="footer__link footer__link--hover" href="tel:89122871081">
+                            +7912-287-10-81
+                        </a>
+                    </li>
                 </ul>
             </p>
         </div>
