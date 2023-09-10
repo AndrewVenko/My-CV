@@ -433,6 +433,11 @@ body {
 
     .noemi__iframe {
         width: 100%;
+        height: 300px;
+    }
+
+    .noemi__btn--padding {
+        padding: 10px 15px;
     }
 
     .my-sertificates__header {
@@ -441,23 +446,27 @@ body {
 
     .my-sertificates__blocks {
         grid-template-areas: 'layout adaptive-layout' 'git basics-JS' 'basics-JS-browser advanced-JS';
+        box-sizing: border-box;
+    }
+
+    .my-sertificates__block {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: rgb(61, 60, 60);
+        border: none;
+        border-radius: 12px;
     }
 
     .my-sertificate__object {
         display: none;
-        width: 100%;
     }
 
     .my-sertificate__link {
-        width: 100%;
-        height: 100%;
         box-sizing: border-box;
         display: flex;
         justify-content: center;
         padding: 20px 10px;
-        border: 1px solid black;
-        border-radius: 12px;
-        background-color: black;
         color: white;
     }
 
